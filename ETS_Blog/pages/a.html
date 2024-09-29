@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>多功能导航栏示例</title>
+<style>
+  /* 导航栏样式 */
+  #navbar {
+    display: none; /* 默认隐藏 */
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 300px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    z-index: 1000;
+    padding: 20px;
+    text-align: center;
+  }
+  /* 其他样式 */
+  body {
+    font-family: Arial, sans-serif;
+  }
+</style>
+</head>
+<body>
+
+<!-- 导航栏触发链接 -->
+<a href="#" id="toggleNavbar">打开导航栏</a>
+
+<!-- 多功能导航栏 -->
+<div id="navbar">
+  <h2>导航栏</h2>
+  <nav>
+    <ul>
+      <li><a href="#">首页</a></li>
+      <li><a href="#">关于我们</a></li>
+      <li><a href="#">服务</a></li>
+      <li><a href="#">联系方式</a></li>
+    </ul>
+  </nav>
+  <button id="closeNavbar">关闭</button>
+</div>
+
+<script>
+// JavaScript 代码
+document.getElementById('toggleNavbar').addEventListener('click', function(event) {
+  event.preventDefault(); // 阻止链接默认行为
+  var navbar = document.getElementById('navbar');
+  navbar.style.display = 'block'; // 显示导航栏
+});
+
+// 监听关闭按钮点击事件
+document.getElementById('closeNavbar').addEventListener('click', function() {
+  var navbar = document.getElementById('navbar');
+  navbar.style.display = 'none'; // 隐藏导航栏
+});
+</script>
+
+</body>
+</html>

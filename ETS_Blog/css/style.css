@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  /* background-color: black; */
+}
+
+.fa-snowflake {
+  animation: fall 2s linear forwards;
+  color: #fff;
+  position: absolute;
+  top: -20%;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(105vh);
+  }
+}
+
+.main_container {
+  left: 50%;
+  right: 50%;
+  top: 50%;
+  bottom: 50%;
+  margin-top: 80px;
+  transform: translate(-50%, -50%);
+  width: 1200px;
+  height: 600px;
+  /* background-color: bisque; */
+  position: relative;
+}
+
+/* 外接界面 */
+.page1 {
+  display: none;
+  /* 默认隐藏 */
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 1200px;
+  height: 600px;
+  /* background-color: #f9f9f9; */
+
+  /* box-shadow: 0 2px 4px rgba(0,0,0,0.2); */
+
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.484);
+  border-radius: 10px;
+  transition: transform 0.5s ease;
+  z-index: 1000;
+  padding: 20px;
+  /* text-align: center; */
+}
+
+.page1_return {
+  position: absolute;
+  bottom: 20px;
+  width: 1000px;
+  height: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.page1_return_button {
+  width: 700px;
+  height: 30px;
+  border: none;
+  border-radius: 20px;
+  background: rgba(32, 29, 29, 0.484);
+  color: #fff;
+  font-size: 18px;
+}
+
+.page1_content,.page1_content1,.page1_content2 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100px;
+  width: 500px;
+  height: 400px;
+  display: none;
+  text-align: center;
+}
+
+.page1_content>img {
+  margin-top: 50px;
+  width: 300px;
+}
+/* 团队简介 */
+.ets-brief{
+  position: relative;
+  width: 800px;
+  height: 500px;
+  left: 50%; 
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.ets-brief-text{
+  width: 100%;
+  height: 100%;
+  color: #000000b7;
+  font-size: 18px;
+  line-height: 30px;
+}
+/* 结尾信息 */
+.footer{
+  position: fixed;
+  left: 0;
+  /* bottom: 80px; */
+  bottom: 0;
+  /* transform: translateX(-50%); */
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(50, 50, 50, 0.594);
+  backdrop-filter: blur(10px);
+  color: #fff;
+}
+.footer>span{
+  color: #fff;
+}
+.footer a{
+  text-decoration: none;
+  color: #fff;
+}
+.footer a:hover{
+  color: #268bb0a9;
+  text-decoration: underline;
+}

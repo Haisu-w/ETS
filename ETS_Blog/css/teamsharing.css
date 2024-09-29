@@ -1,0 +1,90 @@
+.box {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 1500px;
+    height: 800px;
+    background-color: rgba(25, 25, 25, 0.5);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+
+.nav-background {
+    border-radius: 20px;
+    position: fixed;
+    left: 100px;
+    top: 20px;
+    width: 200px;
+    height: 700px;
+    background-color: rgba(255, 255, 255, 0.475);
+}
+
+/* 嵌套网页 */
+.iframe {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-40%, -50%);
+    /* width: 1000px;
+    height: 600px; */
+    border: none;
+}
+
+/* 返回按钮 */
+.btn-animate {
+    position: absolute;
+    width: 130px;
+    height: 40px;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 40px;
+    border: none;
+    border-radius: 5px;
+    background: #005b7d;
+    /* background-color: #00afee; */
+    color: #a30000;
+    text-align: center;
+}
+.btn-animate a{
+    display: block;
+    width: 130px;
+    height: 40;
+    text-decoration: none;
+    color: #000000c7;
+}
+.btn-animate__around-2 {
+    background: transparent;
+    color: #000000c7;
+
+    &>svg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        /* background-color: #00afee; */
+
+        &>rect {
+            stroke-width: 6px;
+            fill: transparent;
+            stroke: rgba(25, 25, 25, 0.5);
+            stroke-dasharray: 85 400;
+            stroke-dashoffset: -200%;
+            transition: 1s all ease;
+        }
+    }
+
+    &:hover {
+        &>svg {
+            &>rect {
+                stroke-dasharray: 50 0;
+                stroke-width: 3px;
+                stroke-dashoffset: 0;
+                stroke: #ffffff;
+            }
+        }
+    }
+}

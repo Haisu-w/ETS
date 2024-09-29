@@ -1,0 +1,41 @@
+/* body{
+    padding: 0px;
+    margin: 0px;
+} */
+.topmenu{
+    margin-top: 50px;
+}
+.topmenu a{
+    background-color: rgb(89, 186, 255);
+    padding: 20px 40px;
+    font-size: 20px;
+    border: solid 4px #579098;
+}
+.topmenu a:link,.topmenu a:visited{
+    color: rgb(12, 0, 231);
+    text-decoration: none;
+}
+.content{
+    display: none;
+    position: relative;
+    width: 300px;
+    height: 200px;
+    margin-top: 200px;
+}
+.content ul{
+    margin-top: 200px;
+    display: none;
+    position: absolute;
+}
+.content li{
+    
+    display: none;
+    margin-top: 400px;
+    text-decoration: none;
+    position: absolute;
+}
+.topmenu a:hover,.content li{
+    /* display: block; */
+    color: #fff;
+    background-color: #003cff;
+}

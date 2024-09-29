@@ -1,0 +1,213 @@
+
+.main_container_left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 600px;
+    height: 100%;
+    /* background-color: #c02e2e; */
+}
+.main_container_left>.mcl_logo {
+    position: relative;
+    height: 200px;
+    width: 500px;
+    left: 50%;
+    right: 50%;
+    transform:translateX(-50%);    
+    /* background-color: aqua; */
+    /* left: 50%; */
+    /* top: 50%; */
+    /* transform: translate(-50%, -50%); */
+}
+.mcl_logo>img{
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* border-radius: 50%; */
+    /* background-color: red; */
+}
+
+
+
+.mcl_logo>h1{
+    position: absolute;
+    left: 200px;
+    top: 50px;
+    font-size: 50px;
+    color: #fff;
+}
+/* 团队简介 */
+.main_container_left>.mcl_brief {
+    position: relative;
+    width: 500px;
+    height: 180px;
+    margin-top: 30px;
+    left: 50%;
+    right: 50%;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    border-right: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(15px);
+    background: rgba(50,50,50,0.2);
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+    transform: translateX(-50%);
+}
+.main_container_left>.mcl_brief:hover {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    border-right: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(15px);
+    background: rgba(8, 8, 8, 0.2);
+    border-radius: 10px;
+    transition: background-color 0.5s ease;
+}
+/* 简介a标签 */
+.mcl_brief>.mcl_brief_link{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    white-space: normal;
+    text-align: center;
+}
+/* 第一个文本 */
+.mcl_brief_link :nth-child(2){
+    display: block;
+    position: relative;
+    width: 400px;
+    height: 45px;
+    /* background-color: aqua; */
+    left: 50%;
+    right: 50%;
+    text-align: left;
+    transform: translateX(-50%);
+    font-size: 24px;
+    line-height: 45px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin-top: 40px;
+    /* padding-top: 35px; */
+}
+/* 第二个文本 */
+.mcl_brief_link :nth-child(3){
+    display: block;
+    position: relative;
+    width: 400px;
+    height: 30px;
+    /* background-color: aqua; */
+    left: 50%;
+    right: 50%;
+    text-align: left;
+    transform: translateX(-50%);
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+    /* padding-top: 35px; */
+}
+/* 第三个文本 */
+.mcl_brief_link :nth-child(4){
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* 左引号 */
+.mcl_brief_left_quote {
+    position: absolute;
+    display: block;
+    width: 500px;
+    /* background-color: blue; */
+    top: 15px;
+    left: 15px;
+    width: 30px;
+    font-size: 40px;
+}
+/* 右引号 */
+.mcl_brief_right_quote {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    width: 30px;
+    font-size: 40px;
+}
+
+/* 联系我们 */
+
+.main_container_left>.mcl_contact {
+    position: relative;
+    width: 500px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* height: 100%; */
+}
+.main_container_left>.mcl_contact:hover {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    border-right: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(15px);
+    background: rgba(50,50,50,0.2);
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+.mcl_contact>a{
+    display: flex;
+    width: 30px;
+    height: 50px;
+    margin-left: 10px;
+    align-items: center;
+    /* float: left; */
+    /* line-height: 50px; */
+}   
+.mcl_contact_link>img{
+    /* margin-left: 20px; */
+    width: 30px;
+    top: 50%;
+}
+#textDisplay{
+    position: absolute;
+    width: 300px;
+    height: 40px;
+    text-align: right;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-35%);
+    color: #fff;
+    /* align-items: center; */
+}
+/* .mcl_contact_link_text{
+    display: none;
+    color: #fff;
+    width: 30px;
+    height: 50px;
+    margin-left: 10px;
+    align-items: center;
+} */
+.mcl_contact_link:hover .mcl_a001,
+.mcl_contact_link:link .mcl_a001{
+    display: block;
+}
+ .mcl_logo>.circle_image {
+    /* position: absolute; */
+    width: 100px; /* 设置图像宽度 */
+    height: 100px; /* 设置图像高度 */
+    border-radius: 50%; /* 将图像设置为圆形 */
+    overflow: hidden; /* 确保图像不超出边界 */
+    display: block; /* 避免图像旁边出现空白间隙 */
+}

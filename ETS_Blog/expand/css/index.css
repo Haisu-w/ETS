@@ -1,0 +1,13 @@
+.content{
+    position: relative;
+    left: 50%;
+    /* top: 50%; */
+    transform: translateX(-50%);
+    /* background-color: #ffffff; */
+    width: 1200px;
+    height: 850px;
+    /* overflow: hidden; */
+    overflow-y: auto; /* 允许垂直滚动 */
+    overflow-x: hidden; /* 隐藏水平滚动 */
+    scrollbar-width: none; 
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/小图标_地图.png" type="x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/index_left.css">
+    <link rel="stylesheet" href="../css/index_right.css">
+    <title>ETS Blog</title>
+    <script src="../Javascript/background.js"></script>
+    <script src="../Javascript/index.js"></script>
+    <script src="../Javascript/mousedot.js"></script>
+</head>
+
+<body onload="setRandomBackground()">
+    <!-- 下雪效果 -->
+    <!-- <i class="fas fa-snowflake"></i> -->
+    <!-- 联系外接界面 -->
+    <div class="page1" id="page1">
+        <div class=" page1_return">
+            <button class="page1_return_button" id="closeNavbar">-Return-</button>
+        </div>
+        <div class="page1_content" id="page1Content">
+            <img src="../images/qq审核表.png" alt="">
+        </div>
+        <div class="page1_content1" id="page1Content1">
+            微信群
+            <br>
+            暂无微信群
+            <br>
+            点击QQ审核加入我们
+        </div>
+        <div class="page1_content2" id="page1Content2">
+            联系我们
+            <br>
+            暂无邮件联系
+            <br>
+            点击QQ审核加入我们
+        </div>
+        <div class="ets-brief" id="page1Content3">
+            <div class="ets-brief-text">
+                <div style="text-align: center;"><p1 style="font-size: 25px;">ETS团队</p1></div><br>
+                <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ETS团队，简称探索技术共享团队，是一群喜欢玩《我的世界》游戏和搞IT开发的伙伴们组成的。我们团队的宗旨很简单，就是一起探索游戏的乐趣，学习新的技术，然后分享我们的经验和成果。</div><br>
+                <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在《我的世界》这个游戏里，我们团队的人都是游戏迷，大家喜欢一起建造各种奇妙的建筑，探索游戏里的秘密，有时候还会举办一些小比赛，看看谁更厉害。我们的作品在游戏圈子里也小有名气，吸引了不少玩家来参观。</div><br>
+                <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;至于IT开发这块，我们团队的人也都是技术爱好者。我们做过网站开发、小程序、还有一些数据处理的项目。虽然我们不是最顶尖的，但我们都有一颗不断学习、进步的心。大家在一起互相帮助，共同解决难题，技术也越来越好。</div><br>
+                <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我们团队的氛围很轻松，大家都是朋友，平时会一起讨论游戏心得，也会交流编程技巧。我们相信，无论是玩游戏还是搞开发，最重要的是开心和成长。所以，我们欢迎更多有共同兴趣的朋友加入我们，一起玩耍，一起进步。让我们一起在ETS团队找到属于自己的乐趣和成就感！</div>
+                <br>   
+            </div>
+        </div>
+    </div>
+    <div class="main_container">
+        <!-- //左半部分  -->
+        <div class="main_container_left">
+            <div class="mcl_logo">
+                <img src="../images/blog.jpg" alt="圆形头像" class="circle_image">
+                <h1>ETS Team</h1>
+            </div>
+            <div class="mcl_brief" id="toggleNavbar3">
+                <a href="" class="mcl_brief_link">
+                    <img src="../images/左引号.png" alt="" class="mcl_brief_left_quote">
+                    <span>Hello! World!</span>
+                    <span>Hi! I'm ETS Blog.欢迎大家加入ETS团队！让我们一起分享生活！</span>
+                    <span>Click Look Me!</span>
+                    <img src="../images/右引号.png" alt="" class="mcl_brief_right_quote">
+                </a>
+            </div>
+            <div class="mcl_contact links">
+                <a href="https://github.com/Haisu-w?tab=projects" target="_blank" class="mcl_contact_link mcl_b001"
+                    data-text="Github瞅一瞅！">
+                    <img src="../images/Github.png" alt="">
+                    <!-- <span class="mcl_contact_link_text mcl_a001">Github</span> -->
+                </a>
+                <a href="#" id="toggleNavbar1" class="mcl_contact_link mcl_b002" data-text="暂无微信审核哦">
+                    <img src="../images/微信.png" alt="">
+                </a>
+                <a href="#" id="toggleNavbar" class="mcl_contact_link mcl_b003" data-text="通过QQ审核加入我们-">
+                    <img src="../images/QQ.png" alt="">
+                </a>
+                <a href="#" id="toggleNavbar2" class="mcl_contact_link mcl_b004" data-text="可以发送邮件说明问题！">
+                    <img src="../images/邮件.png" alt="">
+                </a>
+                <div id="textDisplay">通过这里联系我们！</div>
+            </div>
+        </div>
+        <!-- //右半部分 -->
+        <div class="main_container_right">
+            <div class="mcr_top">
+                <div class="mcr_motto  text-box" id="textContainer">
+                    <span class="text" id="textContent">夜色难免黑凉，前行必有曙光！</span>
+                    <span class="author" id="textAuthor"> - ETS</span>
+                </div>
+                <div class="mcr_TimeLine">
+                    <div class="date">
+                        <span id="year">2024&nbsp;年&nbsp;</span>
+                        <span id="month">9&nbsp;月&nbsp;</span>
+                        <span id="day">26&nbsp;日&nbsp;</span>
+                        <span id="weekday">&nbsp;星期四&nbsp;</span>
+                    </div>
+                    <div class="time">
+                        <span id="currentTime">10:00:00</span>
+                    </div>
+                    <div class="weather">
+                        <span>秦皇岛&nbsp;</span>
+                        <span>晴&nbsp;</span>
+                        <span>21°C&nbsp;</span>
+                        <span>东北风&nbsp;</span>
+                        <span>≤3级&nbsp;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="mcr_bottom">
+                <!-- 地图(在线) -->
+                <div class="mcr_OnlineMap mcr_bottom_item">
+                    <a href="onlinemap.html" class="mcr_OnlineMap_link">
+                        <img style="width: 35px;" src="../images/地图.png" alt="">在线地图
+                    </a>
+                </div>
+                <!-- 分享 -->
+                <div class="mcr_share mcr_bottom_item">
+                    <a href="teamsharing.html" class="mcr_share_link">
+                        <img src="../images/分享.png" alt="">团队分享
+                    </a>
+                </div>
+                <!-- 图片 -->
+                <div class="mcr_picture mcr_bottom_item">
+                    <a href="picture.html" class="mcr_picture_link">
+                        <img src="../images/图片.png" alt="">图片
+                    </a>
+                </div>
+                <!-- 功能 -->
+                <div class="mcr_function mcr_bottom_item">
+                    <a href="function.html" class="mcr_function_link">
+                        <img src="../images/功能设置.png" alt="">更多功能
+                    </a>
+                </div>
+                <!-- 成员(ETS成员) -->
+                <div class="mcr_member mcr_bottom_item">
+                    <a href="teammembers.html" class="mcr_member_link">
+                        <img src="../images/团队成员.png" alt="">团队成员
+                    </a>
+                </div>
+                <!-- 展开(拓展) -->
+                <div class="mcr_expands mcr_bottom_item">
+                    <a href="../expand/index.html" class="mcr_expands_link">
+                        <img src="../images/展开.png" alt="">拓展
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <span>Copyright © 2024 ETS Team</span>&nbsp;&&nbsp;
+        <a href="#">Made by ETS 开发者</a>&nbsp;&&nbsp;
+        <a href="#">备案号</a>
+    </div>
+</body>
+
+</html>
